@@ -13,3 +13,6 @@ All other files were meant to animate objects or they were practice and i forgot
 Inlcuded all code used. I didn't upload the skybox it was too big.
 Link to Part1 Executable(since i the bloom filter wont run on webgl): https://drive.google.com/open?id=1ruoa2FdF8OpUXTNQlLCkL4Gd2fPQnayO
 
+
+Link to Part2 website(works on in the web but doesn't work in my editor so i dont know if this will cause any problems on a different machine): https://bbasaldu.github.io/HW2P2/ 
+Use W and S to move terrain up and down
