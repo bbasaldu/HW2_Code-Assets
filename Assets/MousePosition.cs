@@ -13,29 +13,39 @@ public class MousePosition : MonoBehaviour
 
         render.material.shader = Shader.Find("Custom/HillFromTexture");
     }
-    float timer = 0.0f;
+    float timer = 1.0f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            print("hello");
-        }
-        while (Input.GetKey(KeyCode.W))
-        {
-            timer += Time.deltaTime;
-            if (timer < 5.0f)
-            {
-                render.material.SetFloat("_DisplacementAmt", 1 + (timer * 0.1f));
-            }
-            else
-            {
-                break;
-            }
-        }
        
-        
-       
+        if(Input.GetKey(KeyCode.W))
+        {
+
+           if( !(1+(timer*0.01f) > 1.48f))
+            {
+                render.material.SetFloat("_DisplacementAmt", 1+(timer * 0.01f));
+
+                timer++;
+            }
+
+
+           
+
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            if( !(1+(timer*0.01f) < 0.54))
+            {
+
+
+                render.material.SetFloat("_DisplacementAmt", 1 + (timer * 0.01f));
+                timer--;
+            }
+           
+        }
+
+
+
 
         // render.material.SetFloat("_mY", Input.mousePosition.y);
 
