@@ -6,6 +6,7 @@ The Xray shader used the outline code given in section and simply has a 3rd pass
 
 Part 2 is the outdoor scene with a skybox, terrain and a water shader.
 I implemeneted the code given in class which included the Simple Mesh script and the HillFromTexture Shader. I then implemented the Water shader that was referenced in class. I also used an external skybox
+Keys W and S move the terrain up and down a bit but theres a limit.
 
 All other files were meant to animate objects or they were practice and i forgot to take them out.
 
